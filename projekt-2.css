@@ -9,7 +9,6 @@
     ". header header ."
     ". nav nav ."
     ". main section ."
-    ". main  aside ."
     ".footer footer .";
 
     gap: 1px;
@@ -39,3 +38,16 @@ footer {
     text-align: center;
     padding: 5px;
 }
+
+.btn{
+padding: 5px 25px;
+background-color: #ffffff;
+color: yellowgreen;
+border: 2px solid yellowgreen;
+box-shadow: 2px 2px #003585, 4px 4px rgb(148, 199, 46);
+}
+
+.btn{
+    padding: 5px 25px;
+        cursor: pointer;
+    }
