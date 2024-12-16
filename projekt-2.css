@@ -33,7 +33,7 @@ footer {
     grid-area: footer;
 }
 .content  > *{
-    background-color: #003585;
+    background-color: #416292;
     color: #ffffff;
     text-align: center;
     padding: 5px;
@@ -44,10 +44,29 @@ padding: 5px 25px;
 background-color: #ffffff;
 color: yellowgreen;
 border: 2px solid yellowgreen;
-box-shadow: 2px 2px #003585, 4px 4px rgb(148, 199, 46);
+box-shadow: 2px 2px #416292, 4px 4px rgb(148, 199, 46);
 }
 
 .btn{
     padding: 5px 25px;
         cursor: pointer;
     }
+
+@media (max-width:500px) {
+        .content {
+            display :grid;
+            width: 100vw;
+            min-height: 100vh;
+            grid-template-columns: 1% 1FR 1%;
+            grid-auto-rows: minmax(80px, auto);
+        
+            grid-template-areas: 
+            ". header ."
+            ". nav ."
+            ". main ."
+            ". section ."
+            ". footer .";
+        
+            gap: 1px;
+        }       
+}
